@@ -44,11 +44,7 @@ public class Bonus20CollectionsLab {
 
 		System.out.println("Welcome to Angie's Shop-n-Go!");
 		System.out.println();
-
-
-	//	System.out.println("\nWhich item would you like to purchase? (enter Item# of food selection)");
-
-		
+	
 //		sc.next();
 		
 		String cont = "y";
