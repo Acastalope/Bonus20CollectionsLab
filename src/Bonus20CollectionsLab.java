@@ -68,31 +68,25 @@ public class Bonus20CollectionsLab {
 			System.out.println();
 			System.out.println(listFood.get((userSelect - 1)) + " added to cart at $" + listPrice.get((userSelect - 1)) + ".");
 			System.out.println("\nWould you like to continue shopping? y or n");
-			//cont = sc.nextLine();
 			cont = sc.next();
 		}
 		System.out.println("\nThanks for your order!");
-
-		//sc.next();
-//	if (cont.equalsIgnoreCase("y")) {
-//		for (int i = 0; i < listFood.size(); i++) {
-//			
-//			System.out.println("Welcome to Angie's Shop-n-Go!");
-//			System.out.println();
-//
-//			System.out.printf("%2s %4s %10s", "Item#", "Item", "Price");
-//			System.out.println();
-//			System.out.printf("%2s %6s %9s", "====", "=====", "=====");
-//			System.out.println();
-//			
-//			System.out.println(listItemNum.get(i) + ". " + listFood.get(i) + " \t$" + listPrice.get(i));
-//		}
-//	}
-//	else {
-//			System.out.println("\nThanks for your order!");
-//		}
-//		System.out.println("\nSorry, we don't have that item. Please make another selection.");
+		System.out.println("\nHere's what you got: ");
 		
+//		boolean checkuserSelect = listItemNum.contains(userSelect);
+		
+//		if (checkuserSelect == true) {
+//			int x = listItemNum.indexOf(userSelect); 
+//			listPrice.get(x);
+//			listFood.get(x);
+//			System.out.println("Add" + listItemNum.get(x) + " to list at" + listPrice.get(x));
+//			listUserSelect.add(listItemNum.get(x));
+
+//		}
+//			else 
+//		System.out.println("Sorry, we don't have that item. Please make another selection.");
+		    
 		}
-}
+}	
+		
 
