@@ -85,13 +85,16 @@ public class Bonus20CollectionsLab {
 			sum(foodPrices);
 
 			cont = Validator.getString(sc, "\nWould you like to buy more? y/n");
-			//while cont.equalsIgnoreCase("y") {
+			if (cont.equalsIgnoreCase("y")) {
 			}
-		//else {
+		else if (cont.equalsIgnoreCase("n")) {
 			System.out.println("Thank you for your purchase. Come back soon!");
 			System.out.println();
 		}
-	
+		else
+			break;
+		}
+	}
 
 	public static double getMax(ArrayList<Double> inputArrayList) {
 		Collections.sort(inputArrayList);
