@@ -71,7 +71,7 @@ public class Bonus20CollectionsLab {
 				foodPrices.add(listPrice.get((userSelect - 1)));
 
 				cont = Validator.getString(sc, "\nWould you like to continue shopping? y or n");
-
+			
 			}
 			System.out.println("\nThanks for your order!");
 			System.out.println("\nHere's what you got: ");
@@ -83,13 +83,15 @@ public class Bonus20CollectionsLab {
 			getMax(foodPrices);
 			getMin(foodPrices);
 			sum(foodPrices);
-			// System.out.println("\nWould you like to buy more? y/n");
-			// cont = sc.next();
 
 			cont = Validator.getString(sc, "\nWould you like to buy more? y/n");
+			//while cont.equalsIgnoreCase("y") {
+			}
+		//else {
 			System.out.println("Thank you for your purchase. Come back soon!");
+			System.out.println();
 		}
-	}
+	
 
 	public static double getMax(ArrayList<Double> inputArrayList) {
 		Collections.sort(inputArrayList);
@@ -119,12 +121,9 @@ public class Bonus20CollectionsLab {
 		System.out.printf("Total price of items purchased:   " + "$%5.2f", sum);
 		System.out.println();
 		System.out.printf("%1s", "-------------------------------");
-		// System.out.println("Total price of items purchased: " + " \t$" + sum);
-		// DecimalFormat numberFormat = new DecimalFormat("#.00");
-		// System.out.println(numberFormat.format(number));
 
 		getAverage(inputArraylist, sum);
-		// System.out.printf("\n$%10.2f", sum);
+
 		return sum;
 	}
 
@@ -138,25 +137,3 @@ public class Bonus20CollectionsLab {
 
 	}
 }
-
-// public static int average {
-//
-// for(int i=0; i<foodPrices.length; i++){
-// total = total + foodPrices[i];
-// double total = 0;
-// double average = total / foodPrices.length;
-// System.out.println("The average price of the items you ordered is: " +
-// average + ".");
-
-// if (checkuserSelect == true) {
-// int x = listItemNum.indexOf(userSelect);
-// listPrice.get(x);
-// listFood.get(x);
-// System.out.println("Add" + listItemNum.get(x) + " to list at" +
-// listPrice.get(x));
-// listUserSelect.add(listItemNum.get(x));
-
-// }
-// else
-// System.out.println("Sorry, we don't have that item. Please make another
-// selection.");
